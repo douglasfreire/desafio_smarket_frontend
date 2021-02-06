@@ -17,3 +17,11 @@
     color: #ffffff;
     background-color: #102b3e;
 }
+.card-user {
+    position: absolute;
+    background-color: #102b3e;
+    left: 90px;
+    top: 90px;
+    right: 90px;
+    bottom: 90px;
+}
