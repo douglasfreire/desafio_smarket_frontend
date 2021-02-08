@@ -3,12 +3,22 @@
     <mat-toolbar-row class="toolbar-row">
       <span>Lista de Tarefas</span>
       <span class="example-spacer"></span>
-      <button mat-raised-button class="button"> Adicionar Usuário <mat-icon>add</mat-icon></button>
+      <button mat-raised-button class="button" (click) = 'addUser()'> Adicionar Usuário <mat-icon>person_add</mat-icon></button>
     </mat-toolbar-row>
   
 </mat-toolbar>
+
 <mat-card class="card-user">
-  <app-user></app-user>
+  <mat-card-title>
+    <app-user>
+    
+    </app-user>
+  </mat-card-title>
+  <mat-card-content>
+    <app-user-list></app-user-list>
+  </mat-card-content>  
+  
+
 </mat-card>
 
 <app-task></app-task>

@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Novo usuário</h1>
+<div mat-dialog-content>
+  <form class="add-user-form" [formGroup]="userForm">
+    <mat-form-field appearance="outline" class="add-user-form-full">
+      <mat-label>Nome do novo usuário</mat-label>
+      <input matInput formControlName="name" name="name">
+      <mat-icon matSuffix>person_add</mat-icon>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button cdkFocusInitial (click)="createUser()" color="green"><mat-icon>save</mat-icon> Salvar</button>
+  <button mat-button (click)="cancel()"><mat-icon>cancel</mat-icon>Cancelar</button>
+  
+</div>
